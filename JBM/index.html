@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Font Test - T-PageCode</title>
+    <style>
+        body{
+            background: linear-gradient(150deg,rgb(0,0,0),rgb(50,50,50));
+            background-attachment: fixed;
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            -webkit-user-select: none;
+        }
+        *{
+            font-weight: 200;
+        }
+        #div1{
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            width: 700px;
+        }
+        #btn1{
+            position: fixed;
+            top: 120%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            color: white;
+            background-color: rgb(63, 63, 63);
+            transition: background-color 0.5s ease;
+        }
+        #btn1:hover{
+            background-color: rgb(100,100,100);
+        }
+        #header1{
+            position: fixed;
+            background-color: rgb(100,100,100);
+            top: 2%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header1">
+        <h1>T-PageCode Font Test</h1>
+    </header>
+    <div id="div1">
+        <h1>T-PageCode Font Test</h1>
+        <h2>这是T-PageCode Font Test</h2>
+        <button id="btn1">Experienc</button>
+        <p style="font-family:'JetBrains Mono';">这是JetBrains Mono,这需要从JetBrains Mono官网下载<p>
+        <p style="font-family:'JetBrains Mono';">网页使用:#YourID Or .YourClass:</p>
+        <i style="font-family:'Consolas';">#YourID{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-family: "JetBrains Mono";<br>}</i>
+        <p>(这和JetBrains团队没有关系,只是测试)</p>
+    </div>
+    <script>
+        document.addEventListener("contextmenu",(e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
