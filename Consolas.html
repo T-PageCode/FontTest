@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FontTest</title>
+    <style>
+        body{
+            background-color: rgb(50,50,50);
+            user-select: none;
+        }
+        *{
+            font-weight: 200;
+            text-align: center;
+            font-family: "Consolas";
+            color: white;
+        }
+        button{
+            width: 150px;
+            height: 35px;
+            background-color: rgb(0,100,255);
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+        button:hover{
+            background-color: rgb(0,50,255);
+        }
+        button:active{
+            background-color: rgb(0,00,255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Consolas</h1>
+    <p>emm...普通Windows电脑上都有这个字体吧?</p>
+    <p>这个字体我就经常放到VS Code用,因为这个网页就是用VS Code或者其他开发的😅</p>
+    <button onclick="window.location.href='./index.html'">返回主页</button>
+    <script>
+        document.addEventListener("contextmenu",(e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>

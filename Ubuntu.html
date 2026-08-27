@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FontTest</title>
+    <style>
+        body{
+            background-color: rgb(50,50,50);
+            user-select: none;
+        }
+        *{
+            font-weight: 200;
+            text-align: center;
+            font-family: "Ubuntu";
+            color: white;
+        }
+        button{
+            width: 150px;
+            height: 35px;
+            background-color: rgb(0,100,255);
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+        button:hover{
+            background-color: rgb(0,50,255);
+        }
+        button:active{
+            background-color: rgb(0,00,255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ubuntu</h1>
+    <p>Ubuntu系统默认字体</p>
+    <p>装Ubuntu虚拟机/实体机的都见过吧?(我虚拟机就是这个字体),还挺好看的啊,但是不预装在Windows里</p>
+    <button onclick="window.location.href='./index.html'">返回主页</button>
+    <script>
+        document.addEventListener("contextmenu",(e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
